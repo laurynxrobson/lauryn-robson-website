@@ -18,6 +18,12 @@ export function NavLinks() {
       >
         About
       </Link>
+      <Link
+        className={`link ${pathname === '/about' ? 'active' : ''}`}
+        href='/contact'
+      >
+        Contact
+      </Link>
     </nav>
   );
 }
