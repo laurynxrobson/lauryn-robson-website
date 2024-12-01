@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { NavLinks } from "./ui/nav-links";
-
+import { Header } from "./header";
+import Footer from "./footer";
 export const metadata: Metadata = {
   title: "Lauryn Robson",
-  description: "This is the offical website of Lauryn Robson",
+  description: "This is the official website of Lauryn Robson",
 };
 
 export default function RootLayout({
@@ -16,8 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NavLinks />
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

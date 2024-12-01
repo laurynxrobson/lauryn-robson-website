@@ -10,13 +10,13 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
-export function NavLinks() {
+export function Header() {
   const pathname = usePathname();
   return (
     <div className="absolute inset-x-0 top-0 z-50">
       <nav className="flex items-center justify-between">
         <div className="flex lg:flex-1">
-          <Link className="-m-1.5 p-1.5" href="/">
+          <Link className="m-1.5 p-1.5" href="/">
             <span className="sr-only">Logo</span>
             <Image
               src={"/apple-touch-icon.png"}
